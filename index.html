@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="logo" class="logo" />
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Search..." />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">3</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">11</span>
+          </div>
+          <div class="user-nav__user">
+            <img
+              src="img/user.jpg"
+              alt="User photo"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">MosSe</span>
+          </div>
+        </nav>
+      </header>
+
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-tv"></use>
+                </svg>
+                <span>Movies</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-tv"></use>
+                </svg>
+                <span>TV Shows</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-users"></use>
+                </svg>
+                <span>People</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-typing"></use>
+                </svg>
+                <span>More</span>
+              </a>
+            </li>
+          </ul>
+          <div class="legal">
+            &copy; 2020 by MosSe. All rights reserved.
+          </div>
+        </nav>
+
+        <main class="main-view">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img src="img/1.jpg" alt="Photo 1" class="gallery__photo" />
+            </figure>
+            <figure class="gallery__item">
+              <img src="img/2.jpg" alt="Photo 2" class="gallery__photo" />
+            </figure>
+            <figure class="gallery__item">
+              <img src="img/3.jpg" alt="Photo 3" class="gallery__photo" />
+            </figure>
+          </div>
+
+          <div class="overview">
+            <h1 class="overview__heading">
+              Avengers: Endgame (2019)
+            </h1>
+            <div class="overview__stars">
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+
+            <div class="overview__favorite">
+              <svg class="overview__icon-favorite">
+                <use xlink:href="img/sprite.svg#icon-plus"></use>
+              </svg>
+              <button class="btn-inline">Add to favorites</button>
+            </div>
+            <div class="overview__rating">
+              <div class="overview__rating-average">8.4</div>
+              <div class="overview__rating-count">613.321 votes</div>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">
+                After the devastating events of Avengers: Infinity War (2018),
+                the universe is in ruins. With the help of remaining allies, the
+                Avengers assemble once more in order to reverse Thanos' actions
+                and restore balance to the universe.
+              </p>
+              <p class="paragraph">
+                Avengers: Endgame is a 2019 American superhero film based on the
+                Marvel Comics superhero team the Avengers, produced by Marvel
+                Studios and distributed by Walt Disney Studios Motion Pictures.
+              </p>
+              <ul class="list">
+                <li class="list__item">Genre: Action, Adventure, Drama</li>
+                <li class="list__item">Running time: 181 minutes</li>
+                <li class="list__item">Language: English</li>
+                <li class="list__item">
+                  Directed by: Anthony Russo, Joe Russo
+                </li>
+                <li class="list__item">Release date: April 22, 2019</li>
+                <li class="list__item">Production company: Marvel Studios</li>
+                <li class="list__item">Based on: The Avengers</li>
+                <li class="list__item">Produced by: Kevin Feige</li>
+              </ul>
+              <div class="recommend">
+                <p class="recommend__count">
+                  Lucy and 3 other friends recommend this movie.
+                </p>
+                <div class="recommend__friends">
+                  <img
+                    src="img/user-3.jpg"
+                    alt="Friend 1"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-4.jpg"
+                    alt="Friend 2"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-1.jpg"
+                    alt="Friend 3"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-5.jpg"
+                    alt="Friend 3"
+                    class="recommend__photo"
+                  />
+                </div>
+              </div>
+            </div>
+            <figure class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi, totam, itaque officia ex onsectetur adipisicing elit.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img src="img/user-1.jpg" alt="" class="review__photo" />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Nick Smith</p>
+                    <p class="review__user-date">Mar 13th, 2020</p>
+                  </div>
+                  <div class="review__rating">8.9</div>
+                </figcaption>
+              </figure>
+
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi adipisicing elit ipsum dolor doloremque.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img src="img/user-2.jpg" alt="" class="review__photo" />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Mary Thomas</p>
+                    <p class="review__user-date">Feb 5th, 2020</p>
+                  </div>
+                  <div class="review__rating">9.1</div>
+                </figcaption>
+              </figure>
+              <button class="btn-inline">Show all <span>&rarr;</span></button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
